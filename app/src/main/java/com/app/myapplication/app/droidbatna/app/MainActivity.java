@@ -18,9 +18,9 @@ public class MainActivity extends ActionBarActivity {
     EditText b;
     EditText c;
     Button btn;
-    CheckBox ax; //Les checkbox pour donnez des nombres négatif car j'ai mis inputtype dans les edittext : Number only
-    CheckBox bx;
-    CheckBox cx;
+   // CheckBox ax; //Les checkbox pour donnez des nombres négatif car j'ai mis inputtype dans les edittext : Number only
+  //  CheckBox bx;
+  //  CheckBox cx;
 
     String a1;
     String b1;
@@ -41,9 +41,9 @@ public class MainActivity extends ActionBarActivity {
         b=(EditText)findViewById(R.id.b);
         c=(EditText)findViewById(R.id.c);
 
-        ax=(CheckBox)findViewById(R.id.aneg);
-        bx=(CheckBox)findViewById(R.id.bneg);
-        cx=(CheckBox)findViewById(R.id.cneg);
+     //   ax=(CheckBox)findViewById(R.id.aneg);
+     //   bx=(CheckBox)findViewById(R.id.bneg);
+      //  cx=(CheckBox)findViewById(R.id.cneg);
     }
     public void solve(View view) { //cette fonction sera appleé si l'utilisateur clique sur le bouton (voir le fichier xml MainActivity onClick)
         a1 = a.getText().toString();
@@ -54,17 +54,17 @@ public class MainActivity extends ActionBarActivity {
             Toast.makeText(this, "SVP completéz les données !", Toast.LENGTH_SHORT).show();
         } else {
             a2 = Integer.parseInt(a1);
-            if (ax.isChecked()) { //si le nombre est negatif ( check box is true)
+          /*  if (ax.isChecked()) { //si le nombre est negatif ( check box is true)
                 a2 = a2 * -1;
-            }
+           }*/
             b2 = Integer.parseInt(b1);
-            if (bx.isChecked()) {
+         /*   if (bx.isChecked()) {
                 b2 = b2 * -1;
-            }
+            }*/
             c2 = Integer.parseInt(c1);
-            if (cx.isChecked()) {
+         /*   if (cx.isChecked()) {
                 c2 = c2 * -1;
-            }
+            }*/
 
             delta = b2 * b2 - 4 * a2 * c2;
 

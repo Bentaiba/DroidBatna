@@ -34,11 +34,7 @@
                   android:id="@+id/a"
                   android:inputType="numberSigned"
                 />
-    <!--    <CheckBox android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:id="@+id/aneg"
 
-                />-->
     </LinearLayout>
 
     <LinearLayout android:layout_width="fill_parent"
@@ -57,11 +53,6 @@
 
                 />
 
-  <!--      <CheckBox android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:id="@+id/bneg"
-
-                />-->
     </LinearLayout>
 
     <LinearLayout android:layout_width="match_parent"
@@ -78,11 +69,7 @@
                   android:id="@+id/c"
                   android:inputType="numberSigned"
                 />
-   <!--     <CheckBox android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:id="@+id/cneg"
 
-                /> -->
     </LinearLayout>
 
 
@@ -92,4 +79,15 @@
             android:text="Solve it!"
             android:onClick="solve"
             />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+
+            >
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Developed by Abderrahmane Bentaiba"
+                  android:layout_alignParentBottom="true"
+
+                />
+
+    </RelativeLayout>
+
 </LinearLayout>
